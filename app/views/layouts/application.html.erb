@@ -1,14 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DevEvaluaciones</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Material Design for Bootstrap</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <!--Navigation-->
+   <nav class="navbar navbar-fixed-top z-depth-1" role="navigation">
+       <div class="container">
+           <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
 
-<%= yield %>
+           </div>
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav">
+                   <li><a href="#sec-home" class="waves-effect waves-light">Home <i class="fa fa-home left"></i></a></li>
+                   <li><a href="#sec-best-features" class="waves-effect waves-light">Acerca de</a></li>
+                   <li><a href="#sec-contact" class="waves-effect waves-light">Contacto</a></li>
+                   <li><a href="" class="waves-effect waves-light">Login</a></li>
+               </ul>
+           </div>
+       </div>
+   </nav>
+   <!--/.Navigation-->
+   <%= yield %>
+
+   <!--Section: Footer-->
+     <footer class="page-footer pt-color" id="sec-footer">
+
+         <!--Footer Content-->
+         <div class="container-fluid footer-content">
+
+             <div class="row text-center wow fadeIn">
+
+                 <h4 class="white-text wow fadeIn">Encuentranos en las Redes sociales</h4>
+
+                 <button type="button" class="btn btn-primary btn-xlg facebook-color waves-effect waves-light fadeInUp"><i class="fa fa-facebook"> </i> <span> Facebook</span> </button>
+
+                 <button type="button" class="btn btn-primary btn-xlg twitter-color waves-effect waves-light fadeInUp" data-wow-delay="0.1s"><i class="fa fa-twitter"> </i> <span> Twitter</span></button>
+
+                 <button type="button" class="btn btn-primary btn-xlg gplus-color waves-effect waves-light fadeInUp" data-wow-delay="0.2s"><i class="fa fa-google-plus"> </i> <span> Google +</span></button>
+
+                 <button type="button" class="btn btn-primary btn-xlg linkedin-color waves-effect waves-light fadeInUp" data-wow-delay="0.3s"><i class="fa fa-linkedin"> </i> <span>LinkedIn</span></button>
+
+                 <button type="button" class="btn btn-primary btn-xlg youtube-color waves-effect waves-light fadeInUp" data-wow-delay="0.6s"><i class="fa fa-youtube"> </i> <span>Youtube</span></button>
+
+             </div>
+
+         </div>
+         <!--/.Footer Content-->
+
+          <!--Coprytights-->
+         <div class="footer-copyright text-center rgba-black-light wow fadeIn">
+             <div class="container-fluid">
+                 © 2016 Copyright: <a href="http://www.realitat.com.mx"> Realität </a>
+             </div>
+         </div>
+         <!--/.Coprytights-->
+
+     </footer>
+     <!--/.Section: Footer-->
+
 
 </body>
 </html>
