@@ -1,0 +1,21 @@
+<div class="container app-header">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @problema.nombre %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @problema.content %>
+</p>
+
+<p>
+  <strong>Evaluacion:</strong>
+  <%= @problema.evaluacion_id %>
+</p>
+
+<%= link_to 'Edit', edit_problema_path(@problema) %> |
+<%= link_to 'Back', problemas_path %>
+</div>
